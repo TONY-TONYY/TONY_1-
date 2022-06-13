@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>my web site</title>
+  <style>
+    #demo {
+      width: 500px;
+      height: 400px;
+      color: white;
+      background-color: grey;
+      position: h1: senter;
+      border-radius: 3%;
+      max-width: 500px;
+      margin: auto;
+    }
+    div {
+      text-align: center;
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+    }
+    .btn1 {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: lightblue;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    .btn2 {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: coral;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    .btn3 {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: grey;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    button:hover {background-color: #3e8e41}
+
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="demo">
+
+    <h1> TONY </h1>
+
+  </div>
+  <br><br><br>
+
+  <button onclick="myfunction1()" class="btn1"> color 1 </button>
+  <button onclick="myfunction2()" class="btn2"> color 2</button>
+  <br><br>
+  <button onClick="refreshPage()" class="btn3">Refresh </button>
+  <script>
+
+    function myfunction1() {
+      document.getElementById("demo").style.backgroundColor = "lightblue";
+    }
+    function myfunction2() {
+      document.getElementById("demo").style.backgroundColor = "coral";
+    }
+    function refreshPage(){
+      window.location.reload();
+    } 
+
+
+  </script>
+
+
+</body>
+</html>
